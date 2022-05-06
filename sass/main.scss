@@ -1,0 +1,27 @@
+// UTILS //
+@import "./utils/variables";
+@import "./utils/reset";
+@import "./utils/mixin";
+@import "./utils/break-points";
+
+// BASE //
+@import "./base/body";
+@import "./base/container-section";
+
+@import "./components/header";
+@import "./components/header-logo";
+@import "./components/mobile-menu";
+
+// COMPONENTS //
+@import "./components/hero";
+@import "./components/features";
+@import "./components/examples";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/footer-logo";
+@import "./components/footer__form";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/filter";
+@import "./components/projects";

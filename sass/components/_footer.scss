@@ -1,0 +1,120 @@
+.footer {
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+  }
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-color;
+}
+
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer__address {
+  @media screen and (max-width: $desktop) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    flex-grow: 1;
+  }
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__map {
+  color: $primary-white-color;
+
+  transition: color $duration $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__link {
+  color: $link-footer-color;
+
+  transition: color $duration $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__box {
+  display: inline-block;
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.footer__text {
+  @media screen and (max-width: $desktop) {
+    text-align: center;
+  }
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.87;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__social-link {
+  @include centeredFlex;
+
+  width: 40px;
+  height: 40px;
+
+  fill: $primary-white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color $duration $cubic, fill $duration $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background-color: $accent-color;
+    border-radius: 50%;
+  }
+}

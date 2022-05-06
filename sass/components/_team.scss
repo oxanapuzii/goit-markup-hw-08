@@ -1,0 +1,95 @@
+.team__section {
+  background-color: $background-color;
+}
+
+.team {
+  padding: 0;
+
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * 30px);
+    margin-left: calc(-1 * 30px);
+  }
+}
+
+.team__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  background-color: $primary-white-color;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+    margin-left: 30px;
+
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.team__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team__title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: $title-text-color;
+
+  color: #212121;
+}
+
+.team__text {
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 16px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__link {
+  @include centeredFlex;
+
+  width: 44px;
+  height: 44px;
+
+  fill: $svg-start-color;
+  border-radius: 50%;
+
+  transition: background-color $duration $cubic, fill $duration $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background-color: $accent-color;
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}

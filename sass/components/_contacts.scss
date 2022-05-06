@@ -1,0 +1,60 @@
+/*-----Контакти Шапки сайту для mobile-версії---*/
+.contacts {
+  display: none;
+}
+//tablet//
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+    margin-left: auto;
+
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  .contacts-link {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--active-link);
+    }
+  }
+  .contacts-link__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  //desktop//
+  .contacts {
+    display: flex;
+    align-items: center;
+
+    &__item:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+  .contacts-link {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--active-link);
+    }
+  }
+  .contacts-link__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .mail {
+    margin-right: 30px;
+  }
+
+}

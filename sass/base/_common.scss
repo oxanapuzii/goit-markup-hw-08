@@ -1,0 +1,39 @@
+ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    background-color: var(--white-color);
+  }
+  
+        //MOBILE//
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .section {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }

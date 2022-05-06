@@ -1,0 +1,32 @@
+// .header {
+    // border-bottom: 1px solid #ececec;
+  // }
+        // MOBILE//
+  // .navigation {
+  //   display: none;
+  
+  // }
+ 
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .specifications__title {
+  //   display: none;
+  // }
+  // .examples {
+  //   display: none;
+  // }

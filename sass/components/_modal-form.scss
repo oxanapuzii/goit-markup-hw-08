@@ -1,0 +1,132 @@
+.form {
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.86;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 12px;
+
+  color: $title-text-color;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+
+  transition: border $duration $cubic, fill $duration $cubic;
+
+  &:focus-within .form__input {
+  outline: none;
+  border: 1px solid $accent-color;
+}
+
+&:focus-within .form__icon {
+  fill: $accent-color;
+}
+}
+
+
+.form__input {
+  margin-top: 4px;
+
+  border: 1px solid #21212133;
+  border-radius: 4px;
+  padding: 11px 12px;
+  padding-left: 40px;
+}
+
+.form__icon {
+  position: absolute;
+  top: 55%;
+  left: 11px;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment {
+  padding: 12px 16px;
+  border: 1px solid #21212133;
+  border-radius: 4px;
+  height: 120px;
+
+  &::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 0.85;
+  letter-spacing: 0.01em;
+}
+}
+
+.checkbox__label {
+
+@media screen and (max-width: $desktop) {
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+ @include centeredFlex;
+
+
+
+  font-size: 14px;
+  line-height: 1.71;
+
+  margin-bottom: 30px;
+}
+
+.checkbox__icon {
+  display: flex;
+  align-items: center;
+
+  margin-right: 8px;
+
+  width: 16px;
+  height: 15px;
+
+  border-radius: 4px;
+  border: 2px solid $title-text-color;
+
+}
+
+
+.checkbox__input {
+    @include centeredFlex;
+
+  margin-right: 8px;
+
+  &:checked + .checkbox__icon {
+  border-color: $accent-color;
+  background-color: $accent-color;
+
+  background-image: url(../images/full-check.svg);
+
+  background-size: contain;
+  background-origin: border-box;
+}
+}
+
+.form__link {
+  text-decoration-line: underline;
+
+  color: $accent-color;
+  margin-left: 3px;
+}
+
+.form__btn {
+  padding: 10px 55px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+  text-align: center;
+}

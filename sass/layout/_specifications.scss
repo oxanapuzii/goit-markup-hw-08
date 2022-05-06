@@ -1,0 +1,32 @@
+
+
+// // .specifications__list {
+// //     display: flex;
+// //     margin-bottom: 94px;
+// //     margin-left: -30px;
+// //   }
+
+// // MOBILE //
+  .specifications__item:not(:last-child) {
+    margin-bottom: 30px;
+  
+  }
+  .container-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+  
+  .subtitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-color);
+  }
